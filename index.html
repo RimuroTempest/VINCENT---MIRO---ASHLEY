@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Cook Book App</title>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    
+ 
+  </head>
+  <body>
+    <style>
+    a {
+      text-decoration: none; /* Remove underline */
+      color: white;
+      background-color: #4CAF50; /* Button-style link */
+      padding: 15px 20px;
+      border-radius: 5px;
+    
+    
+  }
+
+  
+
+  .link-margin {
+      margin: 15px 0 0 45 px; 
+  }
+
+  /* Positioning with relative */
+  .link-relative {
+      position: right;
+      top: 10px; 
+      left: 40px;
+  }
+
+  /* Positioning with absolute */
+  .link-absolute {
+      position: absolute;
+      top: 100px; 
+      left: 50px; 
+  }
+
+  /* Positioning with fixed */
+  .link-fixed {
+      position: fixed;
+      bottom: 20px; 
+      right: 50px;
+  }
+</style>
+    
+  
+    <header>
+      <nav> 
+      <h1>COOK BOOK</h1> 
+      <form>
+        <a href="#" class="link-relative" >HOME</a>
+       <input type="text" name="searchBox" id="searchBox" placeholder="search to the recipe.." value="" /> 
+       
+       <button type="submit"  id="searchBtn">search</button>
+      </form>
+      </nav>
+    </header>
+    
+    
+    
+    
+   <article class="preloader">
+
+      </article>
+    <main>
+      
+      <section>
+        <div class="recipes_container">
+        
+        
+      <h3 class="errormsg"> error msg</h3>
+      
+        </div>
+        
+        <div class="recipe_details">
+           <i class="fas fa-window-close recipeCloseBtn"></i>
+           
+           <div class="recipe_content">
+            <style>
+
+              
+            </style>
+            <style>
+              /* Styling for the about section */
+              #aboutUsSection {
+                 
+                  opacity: 1;
+                  padding: 90px;
+                  margin-bottom: 50px;
+                  text-align: left;
+                  text-align: justify;
+              }
+      
+              /* Styling the search bar */
+              #searchBar {
+                  width: 20px;
+                  padding: 10px;
+                  margin-bottom: 20px;
+                  padding: 100px;
+              }
+          </style>
+        </div> 
+        
+        </div>
+        
+      </section>
+   
+   
+    </main>
+    <body>
+<br><br>
+
+<div class="ABOUT-US" id="aboutUsSection">
+
+      <h1 style="color:#C06C84; padding: 60px;"> ABOUT US</h1>
+      <h3 style="padding: 60px;"> I am Jann Vincent L. Aranas and my partners are Ashley Missy Paran and 
+        Miro Malcohlm, 
+        and we are from the University of Cebu South Campus, currently studying BSIT, freshman; 
+        and this our first ever website. In this website you will find a variety of our favorate dishes...
+        some of them we haven't tasted them yet but they are one of our favorate dishes so so we added them along too. The reason we chose 
+        these variety of dishes is because, we wanted to also tastes some of that dish that we havent tasted yet. 
+        Other than that, we also tried our best in making our first ever website the best and clean. 
+        I hope you enjoy looking at the dish you wanna make at home and thank you so much for your support on our webpage. 
+        Miro, Ashley, Vincent out..
+
+      
+          
+      </div>
+
+      
+      </h3>
+      
+    
+    </body>
+    <script>
+      
+      function hideAboutSection() {
+          var aboutSection = document.getElementById('aboutUsSection');
+          aboutSection.style.display = 'none'; 
+      }
+
+      
+      document.getElementById('searchBtn').addEventListener('click', function() {
+          hideAboutSection();
+      });
+
+      
+      document.getElementById('searchBar').addEventListener('keydown', function(event) {
+          if (event.key === 'Enter') {
+              hideAboutSection(); 
+          }
+      });
+  </script>
+    
+ <script src="app.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script type="text/javascript" charset="utf-8">
+    const preloader = document.querySelector(".preloader");
+window.onload = ()=>{
+
+    preloader.classList.add("preloader_hidden");
+}
+  </script>
+  
+  
+   </body>
+   <footer>
+    <style>
+        
+        .social-icons {
+            text-align: center;
+            padding: 20px;
+            background-color: #F8B191;
+        }
+
+       
+        .social-icons a {
+            margin: 0 10px; 
+            text-decoration: none; 
+            font-size: 30px;
+            color: #333; 
+            transition: color 0.3s ease; 
+        }
+
+       
+        .social-icons a:hover {
+            color: #f39c12; 
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+</body>
+   </footer>
+  
+</html>
